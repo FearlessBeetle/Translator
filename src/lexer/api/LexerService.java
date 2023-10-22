@@ -8,7 +8,8 @@ package src.lexer.api;
  * Eсли ошибок не обнаружено, отправляем проверенные массивы в стековую машину через send(), по сути простая пересылка из параметра в return.
  *
  */
-public interface LexerService {
+public interface LexerService
+{
    boolean checkTokens(String[][] tokens);
    String report();
    String[][] send(String[][] tokens);
